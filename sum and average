@@ -1,0 +1,18 @@
+<script>
+    
+let numbers = [];
+let num;
+
+do {
+  num = parseInt(prompt('Enter a positive number (or 0 to stop): '));
+  if (num > 0) {
+    numbers.push(num);
+  }
+} while (num !== 0);
+
+let sum = numbers.reduce((acc, curr) => acc + curr, 0);
+let average = sum / numbers.length;
+
+document.write('The sum of the numbers is:', sum);
+document.write('The average of the numbers is:', average);
+</script>
