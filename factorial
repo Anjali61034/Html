@@ -1,0 +1,17 @@
+<html>
+    <body>
+<script>
+    function factorial(n) {
+  if (n === 0) {
+    return 1;
+  } else {
+    return n * factorial(n - 1);
+  }
+}
+
+let number = parseInt(prompt('Enter a number: '));
+let result = factorial(number);
+document.write('The factorial of ' + number + ' is ' + result);
+    </script>
+</body>
+</html>
